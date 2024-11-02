@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+/* Homepage and Chat Container */
+#homepage, #chat {
+    width: 100%;
+    max-width: 600px;
+    height: 90vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.intro-container {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #075e54;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #25d366;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Chat Header */
+.header {
+    background-color: #075e54;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.leave-button {
+    background-color: #d9534f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+/* Messages */
+.messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #e5ddd5;
+}
+
+/* Message Bubbles */
+.user-message {
+    background-color: #dcf8c6;
+    text-align: right;
+    border-radius: 15px 15px 0 15px;
+    padding: 10px;
+    margin: 5px 0;
+    max-width: 75%;
+    align-self: flex-end;
+    font-size: 1.1em;
+}
+
+.received-message {
+    background-color: #ffffff;
+    text-align: left;
+    border-radius: 15px 15px 15px 0;
+    padding: 10px;
+    margin: 5px 0;
+    max-width: 75%;
+    align-self: flex-start;
+    font-size: 1.1em;
+}
+
+/* Input Area */
+.input-area {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+}
+
+.input-area input[type="text"] {
+    flex: 3; /* Takes more space */
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    margin-right: 10px;
+}
+
+.input-area button {
+    flex: 1; /* Takes less space than the input */
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #25d366;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+}

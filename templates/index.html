@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Messenger</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <!-- Homepage -->
+    <div id="homepage">
+        <div class="intro-container">
+            <h1>Welcome to Emoji Messenger</h1>
+            <p>Express yourself with emotions!</p>
+            <input type="text" id="username" placeholder="Enter your username">
+            <input type="text" id="room" placeholder="Enter room name">
+            <button onclick="joinChat()">Start Chatting</button>
+        </div>
+    </div>
+
+    <!-- Chat Interface -->
+    <div id="chat" style="display:none;">
+        <div class="header">
+            <h2>Chat Room</h2>
+            <button onclick="leaveChat()" class="leave-button">Leave Room</button>
+        </div>
+        <div class="messages" id="emoji-container"></div>
+        <div class="input-area">
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
